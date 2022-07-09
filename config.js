@@ -19,14 +19,4 @@ const newApp = initializeApp({
 const olddb = getFirestore(oldApp);
 const newdb = getFirestore(newApp);
 
-// newdb.listCollections().then(async a => {
-//     // a.forEach(b => {
-//     for (let b of a) {
-//         const c = await newdb.collection(b.id).get()
-//         for (let d of c.docs) {
-//             console.log(d.data());
-//         }
-//     }
-//     // })
-// })
 module.exports = { olddb, newdb };
